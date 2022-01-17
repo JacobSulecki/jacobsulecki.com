@@ -1,0 +1,168 @@
+html body{
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr 2.75fr 2fr 2fr 2.5fr;
+    grid-template-areas: 
+        "Header    Nav"
+        "Main      Quote"
+        "About     Skills"
+        "Projects  Projects"
+        "HireME   HireME";
+}
+
+.Header{
+    grid-area: Header;
+    background-color: #28559A;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.Title{
+    margin-left: 4rem;
+}
+
+.nav{
+    display: grid;
+    grid-area: Nav;
+    justify-content: end;
+    align-content: center;
+    padding-right: 3rem;
+    background-color: #28559A;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 4rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.Main{
+    display: grid;
+    grid-area: Main;
+    background-color: #3778C2;
+    align-content: center;
+    justify-content: left;
+    padding-left: 15rem;
+}
+
+.Main h1{
+    font-size: 3.3rem;
+    color: white;
+}
+
+.Main h3{
+    justify-self: end;
+    font-size: 1.5rem;
+    color: #0F2557;
+}
+
+.Quote{
+    display: grid;
+    grid-area: Quote;
+    background-color: #3778C2;
+    justify-content: right;
+    align-content: center;
+    padding-right: 10rem;
+}
+
+.Quote h1{
+    font-size: 2rem;
+    color: #150734;
+}
+
+.Quote h3{
+    font-size: 1.5rem;
+    color: #0F2557;
+    justify-self: right;
+}
+
+.About{
+    display: grid;
+    grid-area: About;
+    align-content: center;
+    justify-content: left;
+    padding-left: 15rem;
+}
+
+.About span{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #0F2557;
+}
+
+.About p{
+    width: 30rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.Skills{
+    display: grid;
+    grid-area: Skills;
+    justify-content: center;
+    align-content: center;
+}
+
+.Skills h1{
+    color: #0F2557;
+    font-size: 3.5rem;
+}
+
+.Projects{
+    display: grid;
+    grid-area: Projects;
+    background-color: #0F2557;
+    color: white;
+}
+
+.Projects h1{
+    font-size: 3.5rem;
+    margin-top: 10%;
+    padding-left: 15rem;
+}
+
+.Projects p{
+    justify-self: center;
+    padding-bottom: 10rem;
+    font-size: 2.3rem;
+}
+
+.HireME{
+    display: grid;
+    grid-area: HireME;
+}
+
+.HireME h1{
+    font-size: 3.5rem;
+    color: #0F2557;
+    padding-left: 15rem;
+}
+
+.HireME span{
+    font-size: 1rem;
+}
+
+.logo-links{
+    justify-self: center;
+}
+
+.HireME img{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+}
+
+.email{
+    justify-self: center;
+    color: #0F2557;
+}
+
